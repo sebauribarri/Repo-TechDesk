@@ -1,0 +1,648 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ===== Initializr Styles ==================================================
+   ========================================================================== */
+
+.mobile-request {display: none;}
+.bell {display: none;}
+
+a, a:hover, a:active, a:focus {text-decoration: none;}                
+h1  {font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 48px; color: #fff; line-height: 50px;}
+h2  {font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 17px; color: #666; line-height: 20px;}
+h3  {font-family: 'Open Sans', sans-serif; font-weight: 400; font-size: 16px; color: #666; line-height: 17px;}
+
+.wrapper {width: 100%; margin: 0; min-height:100%; position:relative;}
+.main-container {max-width: 1280px; margin: 0 auto;}
+header {background-color: #ec0000; height: 76px; display: block; background-image: none; }
+.logo, .title, .search  {float: left; display: block; width: 33%; text-align: center; padding-top: 10px; height: 76px;}
+.logo   {background: url("../images/logo-santander.png") no-repeat left top; height: 52px; margin-top: 10px;}
+.title   {vertical-align: top;}
+.title h1 {margin-top: 0;}
+.search {margin-top: 10px;}
+
+.bell-desk   {display: block; float: left;width: 114px; height: 114px; position: absolute; top: 100px; left: 20px;}
+.bell-desk .notifications  {margin: 0; display: block; width: 100px; height: 100px; background: url("../images/icon-notification-big.png") no-repeat left top; background-size: 90%;}
+.bell-desk .notification-number    {display: block; width: 35px; height: 35px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 35px; -webkit-border-radius: 35px; border-radius: 35px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; padding-top: 10px; margin-top: 40px; margin-left: 50px;}
+
+
+
+.big-buttons    { display: block; width: 100%; height: 350px; padding-top: 70px;}
+.big-buttons ul { text-align: center; list-style-type: none; }
+.big-buttons li     {display: inline-block; margin: 0 20px; height: 246px; vertical-align: top;}
+.big-buttons li a   {display: block; width: 160px; height: 160px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 160px; -webkit-border-radius: 160px; border-radius: 160px; text-align: center; margin: 0 auto; text-decoration: none;}
+.big-buttons li a img {vertical-align: middle; padding-top: 20%;}
+.big-buttons li a h2    {padding-top: 20px; text-transform: uppercase;}
+
+.small-buttons  {margin-top: 35px; display: block; width: 100%; height: 250px;}
+.small-buttons ul   {text-align: center; list-style-type: none; }
+.small-buttons li   {display: inline-block; margin: 0 10px; height: 220px; vertical-align: top;}
+.small-buttons li a   {display: block; width: 135px; height: 135px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 135px; -webkit-border-radius: 135px; border-radius: 135px; text-align: center; margin: 0 auto; text-decoration: none;}
+.small-buttons li a img {vertical-align: middle; padding-top: 11%;}
+.small-buttons li a h3  {padding-top: 15px; text-transform: uppercase;}
+
+.circles:hover {background-color: #e8e8e8;}
+
+.help-bar   { margin: 0 auto 30px auto; display: block; background-color: #f7f7f7; border: 2px solid #e6e6e6; text-align: center; width: 650px; height: 115px; border-radius: 8px;}
+.help-bar ul {list-style-type: none; }
+.help-bar ul li {display: inline-block; padding: 0 20px; width: 270px; vertical-align: top;}
+.help-bar ul li a h2 {text-decoration: underline; text-transform: uppercase;}
+.help-bar ul li a h2:hover {color: #000;}
+.description {text-decoration: none; font-size: 12px; color: #333; margin-top: -5px;}
+.footer-container { margin: 0 auto; background-color: #ec0000; display: block; width: 100%; height: 40px; font-size: 12px; color: #fff; float: left; }
+footer {text-align: center; padding: 10px;}
+
+
+.small-search {display: none;}
+.show-hide-mobile {display: none;}
+/*.bell   {display: none;}*/
+
+
+.sidebar.left {
+     z-index: 111111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 350px;
+    background: rgba(230, 230, 230, 0.9); border-right: 1px solid #b3b3b3; overflow: scroll; /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.64); */
+
+}
+
+/*.sidebars > .sidebar { box-shadow: 0 0 5px rgba(0, 0, 0, 0.64); position: fixed; z-index: 111110}*/
+
+.close-btn  {font-size: 16px; color: red; float: right; display: block; width: 100px; height: 40px; position: absolute; z-index: 9999999; right: 10px; }
+.close-btn span {font-size: 16px; color: #000; font-weight: 700;}
+.xclose {top: 3px;}
+
+
+/* Tabs panel */
+.tabbable-panel {display: block; width: 350px; position: absolute; top: 50px;}
+.tabbable-line > .nav-tabs { border: none; margin-left: 15px;}
+.tabbable-line > .nav-tabs > li { width: 104px;}
+.tabbable-line > .nav-tabs > li > a {border: 0; margin-right: 0; color: #fff; background-color: #515151; text-align: center;}
+.tabbable-line > .nav-tabs > li.open > a, .tabbable-line > .nav-tabs > li:hover > a { border: 0; background: #000 !important; color: #fff;}
+.tabbable-line > .nav-tabs > li.open > a > i, .tabbable-line > .nav-tabs > li:hover > a > i { color: #a6a6a6;}
+.tabbable-line > .nav-tabs > li.open .dropdown-menu, .tabbable-line > .nav-tabs > li:hover .dropdown-menu { margin-top: 0px;}
+.tabbable-line > .nav-tabs > li.active { position: relative; background-color: #191919; border-radius: 6px 6px 0 0;}
+.tabbable-line > .nav-tabs > li.active > a { border: 0; color: #fff; background-color: #777777;}
+.tabbable-line > .nav-tabs > li.active > a > i { color: #404040;}
+.tabbable-line > .tab-content { margin-top: 12px;/* background-color: #fff; padding: 10px; border-radius: 4px;*/}
+.cards-tab  { background-color: #fff; padding: 10px; border-radius: 4px; margin: 10px 15px;}
+.portlet .tabbable-line > .tab-content { padding-bottom: 0;}
+
+.middle-tab {margin: 0 4px;}
+.nav-tabs > li > a {border-radius: 6px 6px 0 0;}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width : 1025px) and (max-device-width : 1280px) {
+
+     .big-buttons li { margin: 0 40px;}
+     .small-buttons li { margin: 0 35px;}
+
+
+}
+
+
+
+/*iPhone 5 in PORTRAIT*/
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait){ 
+
+    .large {display: none;}
+    .bell-desk {display: none;}
+    .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
+
+    
+    .logo   {background: url("../images/logo-santander-mobile.png") no-repeat left top; height: 64px; margin-top: 15px; margin-left: 10px; width: 20%; background-size: 70%;}
+    .title  {width: 50%;}
+    .title h1 {font-size: 36px;}
+    .search {display: none;}
+    .bell   {display: block; width: 20%; height: 70px; float: right; margin-right: 8px; padding-top: 15px;}
+    .bell .notifications  {margin: 0; display: block; width: 70px; height: 70px; background: url("../images/icon-notification.png") no-repeat right top; background-size: 60%;}
+    .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; /*position: fixed;top: 32px;*/}
+    .input-group .form-control {width: 87%; float: left; margin-left: 30px;}
+    .input-group-btn  {padding-right: 30px;}
+
+    .big-buttons  {padding-top: 0; height: 210px;}
+    .big-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .big-buttons li  {margin: 0 4px;}
+    .big-buttons li a   {display: block; width: 90px; height: 90px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 90px; -webkit-border-radius: 90px; border-radius: 90px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .big-buttons li a img  {width: 60%; height: auto;}
+    .big-buttons li a h2  {font-size: 15px; line-height: 16px; text-transform: capitalize; padding-top: 10px;}
+
+    .small-buttons  {margin: 0; height: 170px;}
+    .small-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .small-buttons li {margin: 0 3px;}
+    .small-buttons li a   {display: block; width: 65px; height: 65px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 65px; -webkit-border-radius: 65px; border-radius: 65px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .small-buttons li a img  {width: 75%; height: auto;}
+    .small-buttons li a h3  {font-size: 12px; line-height: 15px; text-transform: capitalize; padding-top: 0;}
+
+    .mobile-request {display: block; margin: 0 auto 30px auto; background-color: #f7f7f7; border: 2px solid #e6e6e6; border-radius: 12px; width: 200px; padding: 20px 10px; text-align: center;}
+    .mobile-request a {display: block; font-size: 16px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #990000;}
+    .mobile-request a:hover, .mobile-request a:active, .mobile-request a:focus {text-decoration: none; color: #990000;}
+
+
+
+    .help-bar   { margin: 0 auto 30px auto; display: block; background-color: #f7f7f7; border: 2px solid #e6e6e6; text-align: center; width: 90%; height: 80px;; border-radius: 8px;}
+    .help-bar ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .help-bar ul li {width: 130px;}
+    .help-bar ul li a h2  {font-size: 12px; line-height: 14px; font-weight: 700;}
+    .description {display: none;}
+}
+
+
+/*iPhone 5 in LANDSCAPE*/
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape){ 
+
+    .large {display: none;}
+    .bell-desk {display: none;}
+    .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
+
+    
+    .logo   {background: url("../images/logo-santander-mobile.png") no-repeat left top; height: 64px; margin-top: 10px; margin-left: 10px; width: 20%; background-size: 50%;}
+    .title  {width: 50%;}
+    .title h1 {font-size: 36px;}
+    .search {display: none;}
+    .bell   {display: block; width: 20%; height: 70px; float: right; margin-right: 8px; padding-top: 15px;}
+    .bell .notifications  {margin: 0; display: block; width: 70px; height: 70px; background: url("../images/icon-notification.png") no-repeat right top; background-size: 60%;}
+    .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; position: fixed;top: 32px;}
+    .input-group .form-control {width: 94%; float: left; margin-left: 30px;}
+    .input-group-btn  {padding-right: 30px;}
+
+    .big-buttons  {padding-top: 0; height: 210px;}
+    .big-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .big-buttons li  {margin: 0 20px;}
+    .big-buttons li a   {display: block; width: 105px; height: 105px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 105px; -webkit-border-radius: 105px; border-radius: 105px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .big-buttons li a img  {width: 60%; height: auto;}
+    .big-buttons li a h2  {font-size: 15px; line-height: 16px; text-transform: capitalize; padding-top: 10px;}
+
+    .small-buttons  {margin: 0; height: 170px;}
+    .small-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .small-buttons li {margin: 0 5px;}
+    .small-buttons li a   {display: block; width: 90px; height: 90px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 90px; -webkit-border-radius: 90px; border-radius: 90px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .small-buttons li a img  {width: 75%; height: auto;}
+    .small-buttons li a h3  {font-size: 12px; line-height: 15px; text-transform: capitalize; padding-top: 0;}
+
+    .mobile-request {display: block; margin: 0 auto 30px auto; background-color: #f7f7f7; border: 2px solid #e6e6e6; border-radius: 12px; width: 200px; padding: 20px 10px; text-align: center;}
+    .mobile-request a {display: block; font-size: 16px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #990000;}
+    .mobile-request a:hover, .mobile-request a:active, .mobile-request a:focus {text-decoration: none; color: #990000;}
+
+
+
+    .help-bar   { margin: 0 auto 30px auto; display: block; background-color: #f7f7f7; border: 2px solid #e6e6e6; text-align: center; width: 75%; height: 80px;; border-radius: 8px;}
+    .help-bar ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .help-bar ul li {width: 130px;}
+    .help-bar ul li a h2  {font-size: 12px; line-height: 14px; font-weight: 700;}
+    .description {display: none;}
+}
+
+
+
+/*iPhone 6 PORTRAIT*/
+@media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)  and (orientation : portrait) {
+
+    .large {display: none;}
+    .bell-desk {display: none;}
+    .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
+
+    
+    .logo   {background: url("../images/logo-santander-mobile.png") no-repeat left top; height: 64px; margin-top: 5px; margin-left: 10px; width: 25%;}
+    .title  {width: 50%;}
+    .title h1 {font-size: 36px;}
+    .search {display: none;}
+    .bell   {display: block; width: 20%; height: 70px; float: right; margin-right: 8px; padding-top: 15px;}
+    .bell .notifications  {margin: 0; display: block; width: 70px; height: 70px; background: url("../images/icon-notification.png") no-repeat right top; background-size: 60%;}
+    .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; position: absolute; top: 32px; right: 45px; padding-top: 6px;}
+    .input-group .form-control {width: 96%; float: left; margin-left: 12px;}
+    .input-group-btn  {padding-right: 30px;}
+
+    .big-buttons  {padding-top: 0; height: 210px;}
+    .big-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .big-buttons li  {margin: 0 4px;}
+    .big-buttons li a   {display: block; width: 100px; height: 100px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .big-buttons li a img  {width: 60%; height: auto;}
+    .big-buttons li a h2  {font-size: 15px; line-height: 16px; text-transform: capitalize; padding-top: 10px;}
+
+    .small-buttons  {margin: 0; height: 170px;}
+    .small-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .small-buttons li {margin: 0 3px;}
+    .small-buttons li a   {display: block; width: 80px; height: 80px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 80px; -webkit-border-radius: 80px; border-radius: 80px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .small-buttons li a img  {width: 75%; height: auto;}
+    .small-buttons li a h3  {font-size: 12px; line-height: 15px; text-transform: capitalize; padding-top: 0;}
+
+    .mobile-request {display: block; margin: 0 auto 30px auto; background-color: #f7f7f7; border: 2px solid #e6e6e6; border-radius: 12px; width: 200px; padding: 20px 10px; text-align: center;}
+    .mobile-request a {display: block; font-size: 16px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #990000;}
+    .mobile-request a:hover, .mobile-request a:active, .mobile-request a:focus {text-decoration: none; color: #990000;}
+
+    .sidebar.left { width: 375px; height: 777px; position: absolute; overflow: scroll;}
+    .close-btn {right: 0;}
+    .tabbable-panel {left: 13px;}
+
+    .help-bar   { margin: 0 auto 30px auto; display: block; background-color: #f7f7f7; border: 2px solid #e6e6e6; text-align: center; width: 90%; height: 80px;; border-radius: 8px;}
+    .help-bar ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .help-bar ul li {width: 150px;}
+    .help-bar ul li a h2  {font-size: 14px; line-height: 16px; font-weight: 700;}
+    .description {display: none;}
+
+
+}
+
+
+/*iPhone 6 LANDSCAPE*/
+@media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape) {
+
+    .large {display: none;}
+    .bell-desk {display: none;}
+    .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
+
+    
+    .logo   {background: url("../images/logo-santander-mobile.png") no-repeat left top; height: 64px; margin-top: 5px; margin-left: 25px; width: 25%;}
+    .title  {width: 50%;}
+    .title h1 {font-size: 36px;}
+    .search {display: none;}
+    .bell   {display: block; width: 20%; height: 70px; float: right; margin-right: 8px; padding-top: 15px;}
+    .bell .notifications  {margin: 0; display: block; width: 70px; height: 70px; background: url("../images/icon-notification.png") no-repeat right top; background-size: 60%; position: absolute; top: 15px; right: 30px; }
+    .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; position: absolute; top: 12px; right: 35px; padding-top: 6px;}
+    .input-group .form-control {width: 96%; float: left; margin-left: 30px;}
+    .input-group-btn  {padding-right: 30px;}
+
+    .big-buttons  {padding-top: 0; height: 210px;}
+    .big-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .big-buttons li  {margin: 0 25px;}
+    .big-buttons li a   {display: block; width: 120px; height: 120px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 120px; -webkit-border-radius: 120px; border-radius: 120px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .big-buttons li a img  {width: 60%; height: auto;}
+    .big-buttons li a h2  {font-size: 15px; line-height: 16px; text-transform: capitalize; padding-top: 10px;}
+
+    .small-buttons  {margin: 0; height: 170px;}
+    .small-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .small-buttons li {margin: 0 20px;}
+    .small-buttons li a   {display: block; width: 100px; height: 100px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .small-buttons li a img  {width: 75%; height: auto;}
+    .small-buttons li a h3  {font-size: 12px; line-height: 15px; text-transform: capitalize; padding-top: 0;}
+
+    .mobile-request {display: block; margin: 0 auto 30px auto; background-color: #f7f7f7; border: 2px solid #e6e6e6; border-radius: 12px; width: 200px; padding: 20px 10px; text-align: center;}
+    .mobile-request a {display: block; font-size: 16px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #990000;}
+    .mobile-request a:hover, .mobile-request a:active, .mobile-request a:focus {text-decoration: none; color: #990000;}
+
+    .sidebar.left { width: 375px; height: 777px; position: absolute; overflow: scroll;}
+
+
+    .help-bar   { margin: 0 auto 30px auto; display: block; background-color: #f7f7f7; border: 2px solid #e6e6e6; text-align: center; width: 90%; height: 80px;; border-radius: 8px;}
+    .help-bar ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .help-bar ul li {width: 150px;}
+    .help-bar ul li a h2  {font-size: 14px; line-height: 16px; font-weight: 700;}
+    .description {display: none;}
+
+
+}
+
+
+/*iPhone 6 Plus in portrait */ 
+@media screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation : portrait) { 
+
+    .large {display: none;}
+    .bell-desk {display: none;}
+    .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
+    .logo   {background: url("../images/logo-santander-mobile.png") no-repeat left top; height: 64px; margin-top: 5px; margin-left: 10px; width: 25%;}
+    .title  {width: 50%;}
+    .title h1 {font-size: 36px;}
+    .search {display: none;}
+    .bell   {display: block; width: 20%; height: 70px; float: right; margin-right: 8px; padding-top: 15px;}
+    .bell .notifications  {margin: 0; display: block; width: 70px; height: 70px; background: url("../images/icon-notification.png") no-repeat right top; background-size: 60%; }
+    .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; position: absolute; top: 29px; right: 52px; padding-top: 7px;}
+    .input-group .form-control {width: 305px; float: left; margin-left: 30px;}
+    .input-group-btn  {padding-right: 30px;}
+
+    .big-buttons  {padding-top: 0; height: 210px;}
+    .big-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .big-buttons li  {margin: 0 4px;}
+    .big-buttons li a   {display: block; width: 100px; height: 100px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .big-buttons li a img  {width: 60%; height: auto;}
+    .big-buttons li a h2  {font-size: 15px; line-height: 16px; text-transform: capitalize; padding-top: 10px;}
+
+    .small-buttons  {margin: 0; height: 170px;}
+    .small-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .small-buttons li {margin: 0 3px;}
+    .small-buttons li a   {display: block; width: 80px; height: 80px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 80px; -webkit-border-radius: 80px; border-radius: 80px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .small-buttons li a img  {width: 75%; height: auto;}
+    .small-buttons li a h3  {font-size: 12px; line-height: 15px; text-transform: capitalize; padding-top: 0;}
+
+    .mobile-request {display: block; margin: 0 auto 30px auto; background-color: #f7f7f7; border: 2px solid #e6e6e6; border-radius: 12px; width: 200px; padding: 20px 10px; text-align: center;}
+    .mobile-request a {display: block; font-size: 16px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #990000;}
+    .mobile-request a:hover, .mobile-request a:active, .mobile-request a:focus {text-decoration: none; color: #990000;}
+
+    .sidebar.left { width: 414px; height: 777px; position: absolute; overflow: scroll;}
+
+    .help-bar   { margin: 0 auto 30px auto; display: block; background-color: #f7f7f7; border: 2px solid #e6e6e6; text-align: center; width: 90%; height: 80px;; border-radius: 8px;}
+    .help-bar ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .help-bar ul li {width: 150px;}
+    .help-bar ul li a h2  {font-size: 14px; line-height: 16px; font-weight: 700;}
+    .description {display: none;}    
+
+ }
+
+
+ /*iPhone 6 Plus LANDSCAPE */ 
+@media screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation : landscape) { 
+
+    .large {display: none;}
+    .bell-desk {display: none;}
+    .small-search {padding-top: 10px; margin-bottom: 30px; display: inline-block; }
+    .logo   {background: url("../images/logo-santander-mobile.png") no-repeat left top; height: 64px; margin-top: 5px; margin-left: 10px; width: 25%;}
+    .title  {width: 50%;}
+    .title h1 {font-size: 36px;}
+    .search {display: none;}
+    .bell   {display: block; width: 20%; height: 70px; float: right; margin-right: 8px; padding-top: 15px;}
+    .bell .notifications  {margin: 0; display: block; width: 70px; height: 70px; background: url("../images/icon-notification.png") no-repeat right top; background-size: 60%; position: absolute; top: 15px; right: 30px;}
+    .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; position: absolute; top: 15px; right: 32px; padding-top: 7px;}
+    .input-group .form-control {width: 96%; float: left; margin-left: 30px;}
+    .input-group-btn  {padding-right: 25px;}
+
+    .big-buttons  {padding-top: 0; height: 210px;}
+    .big-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .big-buttons li  {margin: 0 20px;}
+    .big-buttons li a   {display: block; width: 140px; height: 140px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 140px; -webkit-border-radius: 140px; border-radius: 140px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .big-buttons li a img  {width: 60%; height: auto;}
+    .big-buttons li a h2  {font-size: 15px; line-height: 16px; text-transform: capitalize; padding-top: 20px;}
+
+    .small-buttons  {margin: 0; height: 170px;}
+    .small-buttons ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .small-buttons li {margin: 0 10px;}
+    .small-buttons li a   {display: block; width: 100px; height: 100px; background: #f7f7f7; border: 1px solid #b3b3b3; -moz-border-radius: 100px; -webkit-border-radius: 100px; border-radius: 100px; text-align: center; margin: 0 auto; text-decoration: none;}
+    .small-buttons li a img  {width: 75%; height: auto;}
+    .small-buttons li a h3  {font-size: 12px; line-height: 15px; text-transform: capitalize; padding-top: 0; margin-top: 20px;}
+
+    .sidebar.left { height: 781px; position: absolute; overflow: scroll;}
+
+    .mobile-request {display: block; margin: 0 auto 30px auto; background-color: #f7f7f7; border: 2px solid #e6e6e6; border-radius: 12px; width: 200px; padding: 20px 10px; text-align: center;}
+    .mobile-request a {display: block; font-size: 16px; font-weight: 700; text-transform: uppercase; text-decoration: none; color: #990000;}
+    .mobile-request a:hover, .mobile-request a:active, .mobile-request a:focus {text-decoration: none; color: #990000;}
+
+
+
+    .help-bar   { margin: 0 auto 30px auto; display: block; background-color: #f7f7f7; border: 2px solid #e6e6e6; text-align: center; width: 70%; height: 80px;; border-radius: 8px;}
+    .help-bar ul {list-style-type: none; padding: 0px; margin: 0px;}
+    .help-bar ul li {width: 150px;}
+    .help-bar ul li a h2  {font-size: 14px; line-height: 16px; font-weight: 700;}
+    .description {display: none;}    
+
+ }
+
+
+
+
+
+/*IPAD Mini PORTRAIT*/
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation : portrait) { 
+  
+    .logo   {background: url("../images/logo-santander-mobile.png") no-repeat left top; height: 64px; margin-top: 5px; margin-left: 10px; width: 30%; }
+    .title h1 {font-size: 34px;}
+    .search-txt {display: none;}
+    .big-buttons {height: 320px;}
+    .small-buttons {height: 280px;}
+    .footer-container {margin-top: 30px;}
+
+
+ }
+
+ /*IPAD Mini LANDSCAPE*/
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation : landscape){ 
+  
+    .big-buttons {height: 320px;}
+    .small-buttons {height: 280px;}
+ }
+
+
+/*iPhone 5 PORTRAIT*/
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : portrait){ 
+
+     .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; position: absolute; top: 32px; right: 32px; padding-top: 7px;}
+     .sidebar.left {width: 320px; position: absolute; height: 776px;}
+     .tabbable-panel {display: block; width: 320px; position: absolute; top: 50px;}
+     .tabbable-line > .nav-tabs > li {width: 94px;}
+
+
+
+}
+
+/*iPhone 5 LANSCAPE*/
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation : landscape){ 
+
+     .bell .notification-number    {display: block; width: 30px; height: 30px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; position: absolute; top: 32px; right: 32px; padding-top: 7px;}
+     .sidebar.left {width: 320px; position: absolute; height: 776px;}
+     .tabbable-panel {display: block; width: 320px; position: absolute; top: 50px;}
+     .tabbable-line > .nav-tabs > li {width: 94px;}
+
+
+}
+
+/*IPAD 3 & 4*/
+@media screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) /*and (orientation : landscape)*/
+{ 
+
+
+}
+
+
+
+
+/* CSS for high-resolution devices */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    
+   /* .logo   {background: url("../images/logo-santander-mobile@2x.png") no-repeat left top; }*/
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
