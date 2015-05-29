@@ -1,8 +1,3 @@
-//  SIDEBAR Toggle Script
-
-
-// =====================
-
 
 $(document).ready(function () {
     // All sides
@@ -26,13 +21,15 @@ $(document).ready(function () {
 
     });
 
+$("#mainContainer").on("click", function () {
+    
+        var action = "close";
+        var side = "left";
+        $(".sidebar." + side).trigger("sidebar:" + action);
+        return false;
 
-});
+
+    });
 
 
-// $("#mainContainer").attr("data-action", "close");
-
-$('html').click(function() {
-    $('#sidebars').attr("data-action", "close");
-    $('#sidebars').attr("data-side", "left");
 });
