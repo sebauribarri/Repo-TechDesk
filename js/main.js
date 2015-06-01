@@ -21,7 +21,7 @@ $(document).ready(function () {
 
     });
 
-$("#mainContainer").on("click", function () {
+$("#content").on("click", function () {
     
         var action = "close";
         var side = "left";
