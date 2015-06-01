@@ -167,13 +167,49 @@ thead.table-request tr th {background-color: #ccc; text-align: center; text-tran
 .status-red {color: #800000; font-weight: 700;}
 a.archive-btn {display: block; width: 135px; height: 40px; background-color: #ccc; border-radius: 6px; border: 2px solid #b3b3b3; text-align: center; padding-top: 8px; font-weight: 700; font-size: 12px; color: #333; float: right;}
 a.archive-btn:hover {background-color: #fff;}
+.btn-container {display: block; height: 80px;}
 
+.nav-int-bar    {width: 880px; background-color: #e6e6e6; height: 170px; display: block; margin: 20px auto; padding-bottom: 40px; border-radius: 6px;}
+.nav-int    { list-style-type: none; padding: 0; text-align: center;}
+.nav-int li {display: inline-block; margin: -30px 15px 0 15px; vertical-align: top;}
+.nav-int li a {display: block; width: 100px; text-decoration: none; color: #666; font-size: 12px;}
+.nav-int li a:hover {color: #880000;}
+.nav-int li a img {margin-bottom: 8px;}
 
-.nav-int-bar    {width: 820px; text-align: center; background-color: #e6e6e6; height: 60px; display: block; margin: 0 auto; }
-.nav-int    { vertical-align: top;}
-.nav-int ul { list-style-type: none; margin: 0 auto; vertical-align: top; width: 820px; height: 200px;}
-.nav-int ul li {display: inline-block;}
+.nav-int-help {list-style-type: none; padding: 0; text-align: center; margin: 0;}
+.nav-int-help li {display: inline-block; margin: 0 30px;}
+.nav-int-help li a {text-decoration: underline;color: #666;}
 
+.table-curved {
+    border-collapse: separate;
+}
+.table-curved {
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    border-left:0px;
+}
+.table-curved td, .table-curved th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+}
+.table-curved th {
+    border-top: none;
+}
+.table-curved th:first-child {
+    border-radius: 6px 0 0 0;
+}
+.table-curved th:last-child {
+    border-radius: 0 6px 0 0;
+}
+.table-curved th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+.table-curved tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+.table-curved tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
 
 
 /* ==========================================================================
