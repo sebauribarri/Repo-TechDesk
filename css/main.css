@@ -153,7 +153,7 @@ footer {text-align: center; padding: 10px;}
 .middle-tab {margin: 0 4px;}
 .nav-tabs > li > a {border-radius: 6px 6px 0 0;}
 
-.content section {width: 960px; margin: 0 auto;}
+.interior section {width: 960px; margin: 0 auto;}
 .title-bar { margin: 30px 0; display: block; width: 100%; height: 70px; background-color: #f1f1f1; color: #666;}
 .title-bar-txt { background: url("../images/icon-title-requests-lookup.png") no-repeat right top; display: block; height: 70px; width: 330px; float: right; padding: 20px; margin: 5px 20px auto auto;}
 .title-bar-txt h2 {text-transform: uppercase; font-size: 24px; font-weight: 700; margin: 0; display: block;}
@@ -161,7 +161,7 @@ footer {text-align: center; padding: 10px;}
 .title-page h2 {text-transform: uppercase; font-size: 24px;}
 
 .table {width: 960px; margin: 30px auto; text-align: center;}
-thead.table-request tr th {background-color: #ccc; text-align: center; text-transform: uppercase;}
+thead.table-request tr th {background-color: #ccc; text-align: center; text-transform: uppercase; vertical-align: top;}
 
 .status-green {color: #00d205; font-weight: 700;}
 .status-red {color: #800000; font-weight: 700;}
@@ -231,6 +231,7 @@ a.archive-btn:hover {background-color: #fff;}
 
     .large {display: none;}
     .bell-desk {display: none;}
+    .nav-int-bar {display: none;}
     .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
 
     
@@ -277,6 +278,7 @@ a.archive-btn:hover {background-color: #fff;}
 
     .large {display: none;}
     .bell-desk {display: none;}
+    .nav-int-bar {display: none;}
     .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
 
     
@@ -324,6 +326,7 @@ a.archive-btn:hover {background-color: #fff;}
 
     .large {display: none;}
     .bell-desk {display: none;}
+    .nav-int-bar {display: none;}
     .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
 
     
@@ -374,6 +377,7 @@ a.archive-btn:hover {background-color: #fff;}
 
     .large {display: none;}
     .bell-desk {display: none;}
+    .nav-int-bar {display: none;}
     .small-search {display: block; padding-top: 10px; margin-bottom: 30px;}
 
     
@@ -413,6 +417,12 @@ a.archive-btn:hover {background-color: #fff;}
     .help-bar ul li {width: 150px;}
     .help-bar ul li a h2  {font-size: 14px; line-height: 16px; font-weight: 700;}
     .description {display: none;}
+
+    .interior section {width: 667px; margin: 0 auto; padding: 10px;}
+    thead.table-request tr th {font-weight: 400;}
+    .nav-int-bar    {width: 620px;}
+    .nav-int li {display: inline-block; margin: -30px 8px 0 8px;}
+    .nav-int li a {display: block; width: 80px;}
 
 
 }
@@ -522,6 +532,11 @@ a.archive-btn:hover {background-color: #fff;}
     .big-buttons {height: 320px;}
     .small-buttons {height: 280px;}
     .footer-container {margin-top: 30px;}
+
+    .interior section {width: 768px; margin: 0 auto; padding: 10px;}
+    .nav-int-bar    {width: 740px;}
+    .nav-int li {display: inline-block; margin: -30px 10px 0 10px;}
+    .nav-int li a {display: block; width: 90px;}
 
 
  }

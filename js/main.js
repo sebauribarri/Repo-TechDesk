@@ -28,8 +28,11 @@ $("#content").on("click", function () {
         $(".sidebar." + side).trigger("sidebar:" + action);
         return false;
 
-
     });
+
+$('#content a').click(function(event){
+    event.stopPropagation();
+});
 
 
 });
