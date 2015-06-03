@@ -1,63 +1,15 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
-html,
-button,
-input,
-select,
-textarea {
-    color: #222;
-}
+html, button, input, select, textarea { color: #222;}
+html { font-size: 1em; line-height: 1.4; margin:0; padding:0; height:100%;}
+::-moz-selection { background: #b3d4fc; text-shadow: none; }
+::selection { background: #b3d4fc; text-shadow: none;}
 
-html {
-    font-size: 1em;
-    line-height: 1.4;
-    margin:0;
-    padding:0;
-    height:100%;
-}
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-img,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+audio, canvas, img, video { vertical-align: middle;}
+fieldset { border: 0; margin: 0; padding: 0;}
+textarea { resize: vertical;}
+.browsehappy { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0;}
 
 
 /* ===== Initializr Styles ==================================================
@@ -83,8 +35,6 @@ header {background-color: #ec0000; height: 76px; display: block; background-imag
 .bell-desk   {display: block; float: left;width: 114px; height: 114px; position: absolute; top: 100px; left: 20px;}
 .bell-desk .notifications  {margin: 0; display: block; width: 100px; height: 100px; background: url("../images/icon-notification-big.png") no-repeat left top; background-size: 90%;}
 .bell-desk .notification-number    {display: block; width: 35px; height: 35px; background: #cc0000; border: 1px solid #fff; -moz-border-radius: 35px; -webkit-border-radius: 35px; border-radius: 35px; text-align: center; margin: 0 auto; color: #fff; font-size: 14px; font-weight: bold; line-height: 14px; padding-top: 10px; margin-top: 40px; margin-left: 50px;}
-
-
 
 .big-buttons    { display: block; width: 100%; height: 350px; padding-top: 70px;}
 .big-buttons ul { text-align: center; list-style-type: none; }
@@ -116,19 +66,7 @@ footer {text-align: center; padding: 10px;}
 .show-hide-mobile {display: none;}
 /*.bell   {display: none;}*/
 
-
-.sidebar.left {
-     z-index: 111111;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 350px;
-    background: rgba(230, 230, 230, 0.9); border-right: 1px solid #b3b3b3; overflow: scroll; /*box-shadow: 0 0 5px rgba(0, 0, 0, 0.64); */
-
-}
-
-/*.sidebars > .sidebar { box-shadow: 0 0 5px rgba(0, 0, 0, 0.64); position: fixed; z-index: 111110}*/
+.sidebar.left { z-index: 111111; position: fixed; top: 0; left: 0; bottom: 0; width: 350px; background: rgba(230, 230, 230, 0.9); border-right: 1px solid #b3b3b3; overflow: scroll;}
 
 .close-btn  {font-size: 16px; color: red; float: right; display: block; width: 100px; height: 40px; position: absolute; z-index: 9999999; right: 10px; text-decoration: none;}
 .close-btn span {font-size: 16px; color: #000; font-weight: 700;}
@@ -159,6 +97,7 @@ footer {text-align: center; padding: 10px;}
 .title-bar-txt h2 {text-transform: uppercase; font-size: 24px; font-weight: 700; margin: 0; display: block;}
 .title-page {display: block; width: 960px; margin: 0 auto;}
 .title-page h2 {text-transform: uppercase; font-size: 24px;}
+.title-page h2.red-title {color: #880000;}
 
 .table {width: 960px; margin: 30px auto; text-align: center;}
 thead.table-request tr th {background-color: #ccc; text-align: center; text-transform: uppercase; vertical-align: top;}
@@ -180,36 +119,15 @@ a.archive-btn:hover {background-color: #fff;}
 .nav-int-help li {display: inline-block; margin: 0 30px;}
 .nav-int-help li a {text-decoration: underline;color: #666;}
 
-.table-curved {
-    border-collapse: separate;
-}
-.table-curved {
-    border: solid #ccc 1px;
-    border-radius: 6px;
-    border-left:0px;
-}
-.table-curved td, .table-curved th {
-    border-left: 1px solid #ccc;
-    border-top: 1px solid #ccc;
-}
-.table-curved th {
-    border-top: none;
-}
-.table-curved th:first-child {
-    border-radius: 6px 0 0 0;
-}
-.table-curved th:last-child {
-    border-radius: 0 6px 0 0;
-}
-.table-curved th:only-child{
-    border-radius: 6px 6px 0 0;
-}
-.table-curved tr:last-child td:first-child {
-    border-radius: 0 0 0 6px;
-}
-.table-curved tr:last-child td:last-child {
-    border-radius: 0 0 6px 0;
-}
+.table-curved { border-collapse: separate;}
+.table-curved { border: solid #ccc 1px; border-radius: 6px; border-left:0px;}
+.table-curved td, .table-curved th { border-left: 1px solid #ccc; border-top: 1px solid #ccc;}
+.table-curved th { border-top: none;}
+.table-curved th:first-child { border-radius: 6px 0 0 0;}
+.table-curved th:last-child { border-radius: 0 6px 0 0;}
+.table-curved th:only-child { border-radius: 6px 6px 0 0;}
+.table-curved tr:last-child td:first-child { border-radius: 0 0 0 6px; }
+.table-curved tr:last-child td:last-child { border-radius: 0 0 6px 0;}
 
 
 /* ==========================================================================
